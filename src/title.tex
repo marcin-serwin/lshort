@@ -34,7 +34,7 @@
   \tl_if_empty:NTF \GITHUBSHA { % chktex 1
     Version\nobreakspace\VERSION,~\today
   } {
-    Nightly~version\nobreakspace\VERSION@\GITHUBSHA,~\today
+    Nightly~version\nobreakspace\VERSION@\str_range:cnn{GITHUBSHA}{1}{7},~\today
   }
 }
 \ExplSyntaxOff
